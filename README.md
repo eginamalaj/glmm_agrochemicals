@@ -15,7 +15,7 @@ Summarized, here I assess whether the proportion of land area to which agrochemi
 
 Residuals and assumptions of each model were checked using “DHARMa” package (https://cran.r-project.org/web/packages/DHARMa/index.html). An example of the residual diagnostics for insecticides is shown below. Outlier, dispersion and KS tests are all not significant (n.s.)  
 
-
+[residuals.pdf](https://github.com/eginamalaj/glmm_agrochemicals/files/5624924/residuals.pdf)
 
 Contrasts of model retained fixed effects were calculated using Type II Wald chi-squared likelihood-ratio tests, and for significant effects, the comparison between different levels (i.e., year as fixed effect across different regions) was evaluated with multiple pairwise comparisons (Tukey’s HSD). 
 
