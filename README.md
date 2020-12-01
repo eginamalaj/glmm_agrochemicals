@@ -13,17 +13,21 @@ Summarized, here I assess whether the proportion of land area to which agrochemi
 (i) census years (1981-2016), region (Pacific, Prairie, Central, and Atlantic) and their interactions as fixed effects; 
 (ii) CD unit as a random intercept term. 
 
-Residuals and assumptions of each model were checked using “DHARMa” package (https://cran.r-project.org/web/packages/DHARMa/index.html). An example of the residual diagnostics for insecticides is shown below. Outlier, dispersion and KS tests are all not significant (n.s.)  
+Residuals and assumptions of each model were checked using “DHARMa” package (https://cran.r-project.org/web/packages/DHARMa/index.html). An example of the residual diagnostics for insecticides is shown below. Outlier, dispersion and KS tests are all not significant (n.s.).
 
-[residuals.pdf](https://github.com/eginamalaj/glmm_agrochemicals/files/5624924/residuals.pdf)
+
+![residuals](https://user-images.githubusercontent.com/54320408/100787514-64faa600-33d9-11eb-956a-971a39140070.png)
+
 
 Contrasts of model retained fixed effects were calculated using Type II Wald chi-squared likelihood-ratio tests, and for significant effects, the comparison between different levels (i.e., year as fixed effect across different regions) was evaluated with multiple pairwise comparisons (Tukey’s HSD). 
 
-Plotted these contrasts are shown below. Black dots represent estimated marginal means (also known as least squared means) for each year across census division units. Colored bars represent 95% confidence intervals, which are shown in purple for landscape simplification and in green for insecticide use. Red arrows allow statistical comparisons between years, where non-overlapping arrows show that the comparison is significantly different at p-value 0.05.
-
-
-
 Odds ratios (OR) were used to evaluate the performance of pairwise comparisons for changes in agrochemicals and crop classes over time. An OR < 1 indicates lower odds of occurrence in the earlier rather than the later census year, and an OR > 1 indicates higher odds of occurrence in the earlier rather than the later census year. Effects were considered statistically significant for p-values smaller than 0.05.
+
+Plotted these contrasts are shown below. Black dots represent estimated marginal means (also known as least squared means) for each year across census division units. Colored bars represent 95% confidence intervals, which are shown in purple for landscape simplification and in green for insecticide use. Red arrows allow statistical comparisons between years, where non-overlapping arrows show that the comparison is significantly different at p-value 0.05. 
+
+![agrochem_change](https://user-images.githubusercontent.com/54320408/100788021-20bbd580-33da-11eb-8360-c12c7666d2ed.png)
+
+
 
 
 
