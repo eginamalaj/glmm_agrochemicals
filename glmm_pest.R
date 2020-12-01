@@ -143,5 +143,5 @@ ft_plot<- plot(ft_m, comparisons = TRUE, horizontal = FALSE, colors = c("black",
 
 x11(width =30, height=20)
 ag_plot<-plot_grid(ins_plot,fn_plot,herb_plot,ft_plot,nrow = 2) 
-ggsave("agrochem_change.tiff", dpi=500, compression = "lzw", width =30, height=20, plot = ag_plot)
+ggsave("agrochem_change.png", dpi=500,  width =30, height=20, plot = ag_plot)
 
