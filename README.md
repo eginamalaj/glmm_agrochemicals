@@ -6,7 +6,7 @@ This file contains part of the R code to run glmm published with the article:
 
 The original datasets and full R code produced from this study are available at: Federated Research Data Repository (FRDR) https://doi.org/10.20383/101.0272
 
-To run this analysis the `pestls.RData` is needed that contains four different datasets for insecticides, fungicides, herbicides and fertilizers.
+To run this analysis the `pestls.RData` is needed that contains four different datasets for insecticides, fungicides, herbicides and fertilizers. This data depends on the raw data provided in the rpository `CleanCensusDat`.
 
 Summarized, here I assess whether the proportion of land area to which agrochemicals were applied varied over census years and across different regions of Canada using the Census Division (CD) unit level in order to retain the hierarchical structure of the data. I used generalized linear mixed models (GLMMs) with beta distribution and logit link function to account for non-normal and continuous-based, proportional data (0–1) via the `glmmTMB` package (https://doi:10.32614/rj-2017-066). These models will improve statistical inference and reduce biased estimates when compared to the alternative of raw data transformation. Four GLMMs were constructed to assess responses in the proportion of cropland treated with agrochemicals (fertilizers, herbicides, fungicides, insecticides) with the following structure: 
 
